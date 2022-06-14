@@ -1,0 +1,32 @@
+<form class="w-75">
+  <h2>Formulário de Cadastro</h2>
+  <div class="form-group">
+    <label>Nome da Música</label>
+    <input class="form-control" id="inputMusica" placeholder="Entre com o nome da música...">
+  </div>
+  <div class="form-group">
+    <label>Nome da Banda</label>
+    <input class="form-control" id="inputBanda" placeholder="Entre com o nome da banda...">
+  </div>
+  <div class="form-group w-25">
+    <label>Dificuldade</label>
+    <select class="form-control" id="selectDificuldade">
+      <option>Fácil</option>
+      <option>Médio</option>
+      <option>Difícil</option>
+    </select>
+  </div>
+  <div class="form-group w-50">
+    <label>Tempo</label>
+    <input type="range" class="form-control-range" id="rangeTempo" value="80" min="40" max="218" oninput="this.nextElementSibling.value = this.value">
+    <output>80</output>
+  </div>
+  <div class="form-group">
+    <label>URL da imagem</label>
+    <input class="form-control" type="url" id="inputURL" placeholder="Entre a URL">
+  </div>
+  <div class="btn-toolbar float-right">
+  <button type="button" class="btn btn-danger mr-3">Cancelar</button>
+  <button type="submit" class="btn btn-success mr-3">Cadastrar</button>
+</div>
+</form>
