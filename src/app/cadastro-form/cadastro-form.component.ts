@@ -30,9 +30,14 @@ onSubmit(){
     return;
   }
 
-  this.musicasService.save(this.formMusica.value);
-
-  alert('Teste');
+  this.musicasService.save(this.formMusica.value).subscribe(
+    (sucesso) =>(
+      alert("Gravado com sucesso")
+    ),
+    (erro) => {
+      alert("Erro na gravacao!" + JSON.stringify(erro))
+    }
+  );
 }
 
 criarFormulario(musica: Musica) {
