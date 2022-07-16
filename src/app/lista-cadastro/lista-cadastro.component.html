@@ -13,8 +13,11 @@
       </div>
       <div class="song-name mt-2 fs-8">{{m.nomeMusica}}</div>
       <div class="band fs-09">{{m.nomeBanda}}</div>
-      <div class="level fs-09">{{m.dificuldade}}</div>
+      <div class="level fs-09">{{m.dificuldade | uppercase}}</div>
       <div class="tempo fs-09">{{m.tempo}}</div>
+      <div *ngIf="m.dificuldade == 'Difícil'">
+        <strong style="color:red">Atenção</strong>
+      </div>
       <button type="button" class="btn btn-info">Editar</button>
     </div>
 

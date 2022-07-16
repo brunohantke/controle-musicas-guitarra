@@ -45,7 +45,7 @@ criarFormulario(musica: Musica) {
     id: null,
     nomeMusica: [musica.nomeMusica],
     nomeBanda: [musica.nomeBanda],
-    dificuldades:[musica.dificuldade],
+    dificuldade:[musica.dificuldade],
     tempo:[musica.tempo],
     urlImagem:[musica.urlImagem]
   });
