@@ -11,7 +11,7 @@ import { ListaCadastroComponent } from './lista-cadastro/lista-cadastro.componen
 import { VideoPlayerComponent } from './video-player/video-player.component';
 import { YouTubePlayerModule } from '@angular/youtube-player';
 import { WelcomeScreenComponent } from './welcome-screen/welcome-screen.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { TituloComponent } from './titulo/titulo.component';
 
 @NgModule({
@@ -30,7 +30,8 @@ import { TituloComponent } from './titulo/titulo.component';
     BrowserModule,
     AppRoutingModule,
     YouTubePlayerModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
