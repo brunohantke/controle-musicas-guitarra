@@ -1,2 +1,31 @@
+<!-- <app-music-detail></app-music-detail> -->
 
-<app-music-detail></app-music-detail>
+<table class="table table-image">
+  <tr class="wrapper" *ngFor="let m of musicas">
+    <!-- <div class="wrapper text-white"> -->
+    <!-- <div class="d-flex align-items-center justify-content-between mb-2"> -->
+    <!-- <div class="btn mx-2 text-white p-0"><span class="fas fa-arrow-left"></span></div>
+        <div class="btn mx-2 text-white p-0"><span class="fas fa-ellipsis-h"></span></div> -->
+    <!-- </div> -->
+    <div class="d-flex flex-column align-items-center wrapper">
+      <div>
+        <img src={{m.urlImagem}} alt="" class="song-thumbnail">
+      </div>
+      <div class="song-name mt-2 fs-8">{{m.nomeMusica}}</div>
+      <div class="band fs-09">{{m.nomeBanda}}</div>
+      <div class="level fs-09">{{m.dificuldade}}</div>
+      <div class="tempo fs-09">{{m.tempo}}</div>
+      <button type="button" class="btn btn-info">Editar</button>
+    </div>
+
+    <div class="d-flex align-items-center justify-content-between mt-2">
+      <div>
+        <span id="amount-left" class="font-weight-bold"></span>
+      </div>
+      <div>
+        <span id="amount-right" class="font-weight-bold"></span>
+      </div>
+    </div>
+    <!-- </div> -->
+  </tr>
+</table>

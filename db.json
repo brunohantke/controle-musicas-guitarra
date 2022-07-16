@@ -1,0 +1,28 @@
+{
+  "musicas": [
+    {
+      "id": 1,
+      "nomeMusica": "Walk",
+      "nomeBanda": "Foo Fighters",
+      "dificuldades": "Fácil",
+      "tempo": 146,
+      "urlImagem": "https://i1.sndcdn.com/artworks-000073142888-mp6q0b-t500x500.jpg"
+    },
+    {
+      "id": 2,
+      "nomeMusica": "Black",
+      "nomeBanda": "Pearl Jam",
+      "dificuldades": "Difícil",
+      "tempo": 80,
+      "urlImagem": "https://i.scdn.co/image/ab67616d0000b273d400d27cba05bb0545533864"
+    },
+    {
+      "id": 3,
+      "nomeMusica": "Black Dog",
+      "nomeBanda": "Pearl Jam",
+      "dificuldades": "Difícil",
+      "tempo": 146,
+      "urlImagem": "https://www.popsike.ch/pix/20130117/130829212221.jpg"
+    }
+  ]
+}
