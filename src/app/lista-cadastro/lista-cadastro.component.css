@@ -1,0 +1,150 @@
+/* Importing fonts from Google */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+/* Reseting */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #1c1c25;
+}
+
+.wrapper {
+    max-width: 350px;
+    margin: 50px auto;
+    min-height: 500px;
+    border-radius: 15px;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 20px 15px;
+    position: relative;
+    overflow: hidden;
+}
+
+.wrapper .song-thumbnail {
+    width: 220px;
+    height: 200px;
+    object-fit: fill;
+    box-shadow: 0 2px 35px rgba(22, 22, 22, 0.418);
+}
+
+
+.middle {
+    position: relative;
+    width: 100%;
+    margin-top: 25px;
+}
+
+
+input[type=range] {
+    position: absolute;
+    pointer-events: none;
+    -webkit-appearance: none;
+    z-index: 2;
+    height: 10px;
+    width: 100%;
+    opacity: 0;
+}
+
+input[type=range]::-webkit-slider-thumb {
+    pointer-events: all;
+    width: 30px;
+    height: 30px;
+    border-radius: 0;
+    border: 0 none;
+    background-color: red;
+    -webkit-appearance: none;
+}
+
+
+input[type="checkbox"] {
+    position: absolute;
+    width: 20px;
+    opacity: 0;
+    z-index: 200;
+    right: 30px;
+    top: 55.8%;
+    cursor: pointer;
+}
+
+.fas.fa-heart {
+    position: absolute;
+    cursor: pointer;
+    right: 30px;
+    top: 55%;
+    font-size: 1.3rem;
+    color: #ddd;
+}
+
+@keyframes heart {
+    0% {
+        transform: scale(.50);
+    }
+
+    20% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+input[type="checkbox"]:checked+.fas.fa-heart {
+    will-change: font-size;
+    color: #36a31b;
+    animation: heart 1s cubic-bezier(.17, .89, .32, 1.49);
+}
+
+.fs-8 {
+    font-size: 1.2rem;
+    color: #1c1c25;
+}
+
+.fs-09 {
+  color: #1c1c25;
+}
+
+.wrapper .play-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    background-color: #36a31b;
+}
+
+.wrapper .footer {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    bottom: 0px;
+    left: 0%;
+    background-color: rgba(255, 255, 255, 0.1);
+    width: 100%;
+    min-height: 50px;
+    max-height: 50px;
+    border-top-left-radius: 80px;
+    border-top-right-radius: 80px;
+    transition: all 0.4s ease-in;
+    backdrop-filter: blur(10px);
+    z-index: 10;
+    cursor: pointer;
+}
+
+.wrapper .footer:hover {
+    min-height: 450px;
+    max-height: 450px;
+}
+
+.wrapper .footer .lyrics {
+    color: #ddd !important;
+    font-size: 0.8rem;
+    text-align: center;
+}

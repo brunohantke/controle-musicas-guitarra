@@ -1,0 +1,60 @@
+<form [formGroup]="formMusica" class="w-75" (submit)="onSubmit()">
+  <h2>Formulário de Cadastro</h2>
+  <div class="form-group">
+    <label>Nome da Música</label>
+    <input class="form-control"
+      id="inputMusica"
+      formControlName="nomeMusica"
+      placeholder="Entre com o nome da música..."
+      pattern="^[a-zA-Z0-9 _.-]*$" required >
+      <div *ngIf="formMusica.controls['nomeMusica'].errors?.['pattern']">
+          <strong style="color:red" >Apenas letras, números e espaço.</strong>
+      </div>
+  </div>
+  <div class="form-group">
+    <label>Nome da Banda</label>
+    <input class="form-control"
+      id="inputBanda"
+      formControlName="nomeBanda"
+      placeholder="Entre com o nome da banda..."
+      pattern="^[a-zA-Z0-9 _.-]*$" required >
+      <div *ngIf="formMusica.controls['nomeBanda'].errors?.['pattern']">
+          <strong style="color:red" >Apenas letras, números e espaço.</strong>
+      </div>
+  </div>
+  <div class="form-group w-25">
+    <label>Dificuldade</label>
+    <!-- <button type="button" class="btn btn-link">Dificuldade?</button> -->
+    <select class="form-control" id="selectDificuldade" formControlName="dificuldade">
+          <option *ngFor="let dificuldade of dificuldades" [value]="dificuldade">
+            {{ dificuldade }}
+          </option>
+    </select>
+  </div>
+  <div class="form-group w-50">
+    <label>Tempo</label>
+    <input type="range"
+    class="form-control-range"
+    id="rangeTempo"
+    value="80" min="40" max="218" oninput="this.nextElementSibling.value = this.value"
+    formControlName="tempo">
+    <output>80</output>
+  </div>
+  <div class="form-group">
+    <label>URL da imagem</label>
+    <input class="form-control"
+      type="url"
+      id="inputURL"
+      placeholder="Entre a URL"
+      formControlName="urlImagem"
+      pattern="(https?:\/\/(?:www\.|(?!www))[a-zA-Z0-9][a-zA-Z0-9-]+[a-zA-Z0-9]\.[^\s]{2,}|www\.[a-zA-Z0-9][a-zA-Z0-9-]+[a-zA-Z0-9]\.[^\s]{2,}|https?:\/\/(?:www\.|(?!www))[a-zA-Z0-9]+\.[^\s]{2,}|www\.[a-zA-Z0-9]+\.[^\s]{2,})"
+      required>
+      <div *ngIf="formMusica.controls['urlImagem'].errors?.['pattern']">
+        <strong style="color:red" >Favor inserir uma URL válida.</strong>
+      </div>
+  </div>
+  <div class="btn-toolbar float-right">
+  <button type="button" class="btn btn-danger mr-3">Cancelar</button>
+  <button type="submit" class="btn btn-success mr-3" [disabled]="!formMusica.valid">Cadastrar</button>
+</div>
+</form>
