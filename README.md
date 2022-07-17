@@ -4,6 +4,9 @@
 
 https://www.figma.com/file/LfngqBGmoJiSPAuM6utry0/controle-musicas-guitarra?node-id=0%3A1
 
+# Deploy
+https://brunohantke.github.io/controle-musicas-guitarra
+
 
 # Checklist
 
@@ -24,4 +27,4 @@ https://www.figma.com/file/LfngqBGmoJiSPAuM6utry0/controle-musicas-guitarra?node
 - [X] Apresentar uma lista de dados com a diretiva estrutural ngFor.
 - [X] Usar a diretiva ngIf
 - [X] Formatar a apresentação de dados com Pipes.
-- [ ] Build e deploy da aplicação.
+- [X] Build e deploy da aplicação.

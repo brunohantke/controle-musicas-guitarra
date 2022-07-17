@@ -1,6 +1,6 @@
 {
   "name": "controle-musicas-app",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
@@ -12,8 +12,10 @@
   "private": true,
   "dependencies": {
     "@angular/animations": "^14.0.0",
+    "@angular/cli": "~13.3.3",
     "@angular/common": "^14.0.0",
     "@angular/compiler": "^14.0.0",
+    "@angular/compiler-cli": "~13.3.4",
     "@angular/core": "^14.0.0",
     "@angular/forms": "^14.0.0",
     "@angular/platform-browser": "^14.0.0",
@@ -31,7 +33,7 @@
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "^14.0.1",
-    "@angular/cli": "~14.0.1",
+    "@angular/cli": "~14.0.6",
     "@angular/compiler-cli": "^14.0.0",
     "@types/jasmine": "~4.0.0",
     "jasmine-core": "~4.1.0",

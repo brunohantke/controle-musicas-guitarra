@@ -9,11 +9,10 @@ import { CadastroFormComponent } from './cadastro-form/cadastro-form.component';
 import { MenuComponent } from './menu/menu.component';
 import { FooterComponent } from './footer/footer.component';
 import { ListaCadastroComponent } from './lista-cadastro/lista-cadastro.component';
-import { VideoPlayerComponent } from './video-player/video-player.component';
-import { YouTubePlayerModule } from '@angular/youtube-player';
 import { WelcomeScreenComponent } from './welcome-screen/welcome-screen.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { TituloComponent } from './titulo/titulo.component';
+
 
 @NgModule({
   declarations: [
@@ -23,14 +22,12 @@ import { TituloComponent } from './titulo/titulo.component';
     MenuComponent,
     FooterComponent,
     ListaCadastroComponent,
-    VideoPlayerComponent,
     WelcomeScreenComponent,
     TituloComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    YouTubePlayerModule,
     FormsModule,
     ReactiveFormsModule,
     HttpClientModule
