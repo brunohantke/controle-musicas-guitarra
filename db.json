@@ -23,6 +23,22 @@
       "dificuldade": "Difícil",
       "tempo": 146,
       "urlImagem": "https://www.popsike.ch/pix/20130117/130829212221.jpg"
+    },
+    {
+      "id": 4,
+      "nomeMusica": "Vento",
+      "nomeBanda": "Los Hermanos",
+      "dificuldade": "Fácil",
+      "tempo": 148,
+      "urlImagem": "https://gilvas.files.wordpress.com/2004/08/los-hermanos.jpg"
+    },
+    {
+      "id": 5,
+      "nomeMusica": "Grace",
+      "nomeBanda": "Jeff Buckley",
+      "dificuldade": "Difícil",
+      "tempo": 115,
+      "urlImagem": "https://artesonora.pt/wp-content/uploads/2014/05/jeff-buckley.jpg"
     }
   ]
 }
